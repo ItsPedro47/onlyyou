@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <!-- Welcome Screen -->
+  <div class="welcome" id="welcome">
+    <h1>Hi 💗</h1>
+    <p>This little page is just for you</p>
+    <button onclick="openHeart()">Open My Heart 💌</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content hidden" id="content">
+
+    <h2 class="title">Our Little World 🌸</h2>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <div class="card">📅 The day we first talked</div>
+      <div class="card">💬 Our funniest moment</div>
+      <div class="card">🌙 Late night chats</div>
+      <div class="card">✨ The day you made me smile for no reason</div>
+    </div>
+
+    <!-- Quotes -->
+    <div class="quotes">
+      <p id="quoteText">You make my ordinary days feel magical ✨</p>
+    </div>
+
+    <!-- Surprise -->
+    <button class="surprise-btn" onclick="showSurprise()">
+      Click only if you're smiling 😊
+    </button>
+
+    <div class="surprise hidden" id="surprise">
+      <h3>❤️ Surprise ❤️</h3>
+      <p>
+        No matter where life takes us,<br/>
+        you’ll always be special to me 💕
+      </p>
+    </div>
+
+    <!-- Music -->
+    <div class="music">
+      <button onclick="toggleMusic()">🎵 Play / Pause Music</button>
+      <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+      <p class="note">(Add your own soft music file named <b>music.mp3</b>)</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

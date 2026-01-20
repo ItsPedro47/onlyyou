@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', cursive;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.welcome, .content {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  padding: 30px 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.4);
+  max-width: 400px;
+  width: 90%;
+}
+
+.welcome h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(135deg, #ff5f9e, #ff2f6d);
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 0, 100, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 100, 0.6);
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.timeline {
+  display: grid;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.card {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 15px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.quotes {
+  margin: 15px 0;
+  font-size: 1.1em;
+  min-height: 50px;
+}
+
+.surprise-btn {
+  margin-top: 10px;
+}
+
+.surprise {
+  margin-top: 15px;
+  background: rgba(255,255,255,0.25);
+  padding: 15px;
+  border-radius: 15px;
+  animation: pop 0.6s ease;
+}
+
+.music {
+  margin-top: 20px;
+}
+
+.note {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+/* Floating Hearts */
+.hearts::before {
+  content: "💖 💕 💗 💓 💞 💘";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  animation: float 12s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes float {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-120%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+body {
+  background: red;
+}
